@@ -1,0 +1,49 @@
+{
+  "status": "passed",
+  "verification_kind": "synthetic_cpu_smoke_only",
+  "historical_training_reproduced": false,
+  "command": "python ml/smoke.py",
+  "exit_code": 0,
+  "smoke_source_sha256": "7a510020b12fa2cfdcd548ed197b7af6e8415b9675f20ba56bf8c4874e54a76b",
+  "device": "cpu",
+  "torch_version": "2.11.0+cu128",
+  "numpy_version": "2.5.2",
+  "smoke_hidden_size": 32,
+  "global_shape": [
+    1,
+    2,
+    8331
+  ],
+  "actor_shape": [
+    1,
+    2,
+    32,
+    56
+  ],
+  "unit_logits_shape": [
+    1,
+    2,
+    32,
+    4
+  ],
+  "market_logits_shape": [
+    1,
+    2,
+    11,
+    5
+  ],
+  "synthetic_loss": {
+    "total": 3.3253016471862793,
+    "units": 1.317869782447815,
+    "market": 1.371473789215088,
+    "hands_length": 3.179790496826172
+  },
+  "finite_gradient_tensors": 46,
+  "codec_roundtrip": true,
+  "free_decode_excludes_bos": true,
+  "free_decode_eos_absorbing_if_emitted": true,
+  "optimizer_steps": 0,
+  "game_evaluations": 0,
+  "warning": "PyTorch disabled its optional nested-tensor optimization because the copied Transformer layer uses norm_first=True; the smoke completed normally.",
+  "interpretation": "Randomly initialized synthetic inputs demonstrate implementation interfaces. These loss values and decoding checks are not historical training or game-performance results. Numerical output may vary with dependency versions."
+}

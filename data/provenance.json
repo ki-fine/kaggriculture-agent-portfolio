@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "scope": "Sanitized extracts of retained local evidence; original replay archives and mixed-origin full agent are not redistributed. Hashes identify originals but do not substitute for access to them.",
+  "original_files": [
+    {
+      "basename": "KEEP_COPY_V3R2_CROSS24_READONLY_RESULT.json",
+      "sha256": "064fac8f7ec315728a559ce4357f2dcce2260ae20fba7b7a7bae0dc95423ce55"
+    },
+    {
+      "basename": "KEEP_COPY_V3R2_CROSS24_FLAGGED_BASELINE_CERTIFICATE.json",
+      "sha256": "2dd10a153327d261846c8220d6182632b938071c81d5162902e645a3c973ec08"
+    },
+    {
+      "basename": "KEEP_COPY_CROSS24_CASH_HEALTH.json",
+      "sha256": "8d4cd7d9985fe5182c4fe9ac9b022520253a1bc7c22083a091a6f048930d87a0"
+    },
+    {
+      "basename": "KEEP_COPY_V3R2_CROSS24_DEADLINE_PLAN_V1.json",
+      "sha256": "3d93583a316bca01f599c7e77f69566c012b6fd2446c4b339a57f9b1695e59ff"
+    },
+    {
+      "basename": "FAST_COPY_V3R2_NORMAL_PAIR_RESULT_V3R2.json",
+      "sha256": "9db9a4a0ee246262113900b4ce40cec393eb903e0b4eed3c92a4cfb4f7290344"
+    },
+    {
+      "basename": "FAST_COPY_V3R2_NORMAL_CLOCK_PLAN.json",
+      "sha256": "2fcd30385c30415d321d7564c22cf2fca557f869ff7bca055806046a6567ed36"
+    }
+  ],
+  "release_source_sha256": "087a1ec47310d86da8f3f29a6ad394792558595b48053e4d346dfebc80dfa43b",
+  "observer_module_sha256": "4672b7dcfacd517805e310a4a175b80deba59a6e1feebd652fbbaf56127d7d98",
+  "state_copy_helper_sha256": "c6f1028c6fc81228d2b028d08915b7f0058264ce0a988150d87af83477c07150",
+  "state_copy_extraction": "observer source from import sys as _budget_sys through the line before class Observer; copied without semantic edits; public aliases added.",
+  "published_extracts": [
+    {
+      "basename": "r7_cross24.json",
+      "sha256": "4b5c6a0d5e1a8e56069c01a5a651e76484c3e22d68d66a6220385dcf0b6d0b00"
+    },
+    {
+      "basename": "r7_performance.json",
+      "sha256": "47d9fcd676e78256d644aba7c5fc76d6eb65efe3f90eb9c8ceb721a45f22bc25"
+    }
+  ],
+  "third_party_reference": {
+    "copyright": "Copyright 2020 Kaggle Inc",
+    "license": "Apache-2.0",
+    "origin": "kaggle_environments/utils.py, Struct definition",
+    "local_readonly_source_sha256": "0ce16957c6d6d7b3891cb20d9d277470ba7659d8e7545e61e43b439566b35135"
+  }
+}

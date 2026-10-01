@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "scope": "Representative experiment decisions, with different panels; do not compare means as if they share the same population.",
+  "experiments": [
+    {
+      "version": "R7",
+      "decision": "SELECTED_AND_SUBMITTED",
+      "panel": "2 exposed conditional worlds, 3 opponents, 2 seats, 24 games",
+      "mean_margin_delta": 961.0,
+      "pairs": 12,
+      "strict_panel_health": "FAIL (22/24)",
+      "candidate_health": "12/12",
+      "source_file": "KEEP_COPY_V3R2_CROSS24_FLAGGED_BASELINE_CERTIFICATE.json",
+      "source_sha256": "2dd10a153327d261846c8220d6182632b938071c81d5162902e645a3c973ec08"
+    },
+    {
+      "version": "R8",
+      "decision": "RESEARCH_CANDIDATE_NOT_PROMOTED",
+      "mean_margin_delta": 213.25,
+      "worlds": 4,
+      "sampling": "Historical Route105 conditional worlds; separate 24-game eligibility panel had zero activation.",
+      "world_margin_deltas": [
+        0,
+        623,
+        0,
+        230
+      ],
+      "recorded_outcomes_both_versions": "3 wins, 1 loss at world level",
+      "confound": "Future shop paths differed in the two active worlds.",
+      "source_file": "FINAL_REPORT.md",
+      "source_sha256": "9b8a24964bd9c14b907b03768eccbc8e47c5b45d3db163565ee67683cdb98a9a"
+    },
+    {
+      "version": "R9",
+      "decision": "MIXED_RESULT_NOT_PROMOTED",
+      "mean_margin_delta": 7.714285714285714,
+      "worlds": 14,
+      "games": 56,
+      "better_tied_worse_worlds": [
+        1,
+        12,
+        1
+      ],
+      "sampling": "Historical conditional worlds; not a fully new holdout.",
+      "active_worlds": [
+        {
+          "seed": 1921608,
+          "own_cash_delta": 2184,
+          "rival_cash_delta": -47,
+          "margin_delta": 2231
+        },
+        {
+          "seed": 1921635,
+          "own_cash_delta": 230,
+          "rival_cash_delta": 2353,
+          "margin_delta": -2123
+        }
+      ],
+      "source_file": "FINAL_REPORT.md",
+      "source_sha256": "3ea84dc3634922507a5a0336f5c93bde3ddaf5028fbf3cdbfa1b1350d6a553bb"
+    }
+  ]
+}

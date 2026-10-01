@@ -1,0 +1,2 @@
+# Optional, only for regenerating the already included figures.
+matplotlib>=3.8,<4

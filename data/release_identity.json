@@ -1,0 +1,23 @@
+{
+  "as_of": "2026-10-01",
+  "version": "v100_breakthrough_r7_keep_copy_v3r2",
+  "source_sha256": "087a1ec47310d86da8f3f29a6ad394792558595b48053e4d346dfebc80dfa43b",
+  "package_sha256": "5989617accbc83a989515ba2953226027262c8de1787af67fe08c5174f3dd047",
+  "research_repository_commit": "d7c71188e16ef1ee91f725a2a79b9297f7985a8b",
+  "research_repository_visibility": "private",
+  "kaggle": {
+    "competition": "kaggriculture",
+    "submission_id": "56713467",
+    "status": "accepted_by_platform",
+    "response_message": "Successfully submitted to Kaggriculture",
+    "submission_requests": 1,
+    "score_queries": 0
+  },
+  "accepted_at_utc": "2026-09-30T16:40:13.383953+00:00",
+  "accepted_at_china": "2026-10-01T00:40:13+08:00",
+  "official_results": {
+    "status": "pending",
+    "basis": "Owner confirmed final results are not yet available."
+  },
+  "public_scope": "Selected new code and compact evidence; complete team agent is not redistributed."
+}

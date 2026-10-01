@@ -1,0 +1,823 @@
+{
+  "schema_version": 1,
+  "panel": "R7_combination_cross24",
+  "candidate_label": "R7_KEEP_COPY_V3R2",
+  "control_label": "R4_control",
+  "source_sha256": "087a1ec47310d86da8f3f29a6ad394792558595b48053e4d346dfebc80dfa43b",
+  "control_source_sha256": "ff161fc6bc2d0b6aecd036b4baf07fe785e54d25baba5d53b6d0b75371e11a03",
+  "declared_seeds": [
+    1921601,
+    1921605
+  ],
+  "declared_seats": [
+    0,
+    1
+  ],
+  "declared_opponents": [
+    "Carrot_ref",
+    "Build14_ref",
+    "Guru_ref"
+  ],
+  "expected_pairs": 12,
+  "expected_games": 24,
+  "original_strict_gate": "FAIL_NATIVE_ARTIFACTS_FAILURES_RETAINED",
+  "sampling": "Two conditional worlds reused from earlier KEEP confirmation; seats are paired repetitions, not independent worlds.",
+  "expected_recomputed": {
+    "raw_mean_margin_delta": 961.0,
+    "clean_diagnostic_mean_margin_delta": 1072.4,
+    "strict_healthy_games": 22,
+    "official_cash_checked_transitions": 17256
+  },
+  "rows": [
+    {
+      "opponent": "Carrot_ref",
+      "seed": 1921601,
+      "seat": 0,
+      "candidate": {
+        "own_cash": 76751.0,
+        "rival_cash": 75663.0,
+        "strict_healthy": true,
+        "states": 720,
+        "callbacks": [
+          719,
+          719
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "retained_layer_errors": {},
+        "result_sha256": "67c451ec63f2eb329c5dbf908b34f353246902fd9e983c5e6c5ed7e9a264cb4f",
+        "replay_sha256": "948dd4dd54115ec13596a4b86199cc410d9f264871d6e61a05472cae17a9583e",
+        "cash_audit": {
+          "replay_sha256": "948dd4dd54115ec13596a4b86199cc410d9f264871d6e61a05472cae17a9583e",
+          "checked_transitions": 719,
+          "cash_residuals": [
+            0,
+            0
+          ],
+          "rewards_in_player_order": [
+            76751.0,
+            75663.0
+          ]
+        }
+      },
+      "control": {
+        "own_cash": 72761.0,
+        "rival_cash": 72761.0,
+        "strict_healthy": true,
+        "states": 720,
+        "callbacks": [
+          719,
+          719
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "retained_layer_errors": {},
+        "result_sha256": "75ded7b44af22109fa163f5f64c5f0f8426164f7ed7987c168cdda0c76f11ffe",
+        "replay_sha256": "04a98a5ec2b28b5f8b49dc3c257bba1454145dfc5df76df613adc7f0f75c1d23",
+        "cash_audit": {
+          "replay_sha256": "04a98a5ec2b28b5f8b49dc3c257bba1454145dfc5df76df613adc7f0f75c1d23",
+          "checked_transitions": 719,
+          "cash_residuals": [
+            0,
+            0
+          ],
+          "rewards_in_player_order": [
+            72761.0,
+            72761.0
+          ]
+        }
+      }
+    },
+    {
+      "opponent": "Carrot_ref",
+      "seed": 1921601,
+      "seat": 1,
+      "candidate": {
+        "own_cash": 76751.0,
+        "rival_cash": 75663.0,
+        "strict_healthy": true,
+        "states": 720,
+        "callbacks": [
+          719,
+          719
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "retained_layer_errors": {},
+        "result_sha256": "ceac4bf31f48cee5bd912b7436a7c26aeb0aae471df9cfdac106ad89e0010956",
+        "replay_sha256": "fb373781cebcc7fc9338fc1af6a2bd9ddcb640addecc8087144a92f1ee3d1097",
+        "cash_audit": {
+          "replay_sha256": "fb373781cebcc7fc9338fc1af6a2bd9ddcb640addecc8087144a92f1ee3d1097",
+          "checked_transitions": 719,
+          "cash_residuals": [
+            0,
+            0
+          ],
+          "rewards_in_player_order": [
+            75663.0,
+            76751.0
+          ]
+        }
+      },
+      "control": {
+        "own_cash": 72761.0,
+        "rival_cash": 72761.0,
+        "strict_healthy": true,
+        "states": 720,
+        "callbacks": [
+          719,
+          719
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "retained_layer_errors": {},
+        "result_sha256": "75a544856fb60e569e1d0d70815fed8057c26a0c2c9c5e9efee5e9efbaacffe7",
+        "replay_sha256": "95a5c7e5c3d48ba34e801eb9e90eb746992c9914f5a7215493c75d3b10d98811",
+        "cash_audit": {
+          "replay_sha256": "95a5c7e5c3d48ba34e801eb9e90eb746992c9914f5a7215493c75d3b10d98811",
+          "checked_transitions": 719,
+          "cash_residuals": [
+            0,
+            0
+          ],
+          "rewards_in_player_order": [
+            72761.0,
+            72761.0
+          ]
+        }
+      }
+    },
+    {
+      "opponent": "Carrot_ref",
+      "seed": 1921605,
+      "seat": 0,
+      "candidate": {
+        "own_cash": 84923.0,
+        "rival_cash": 84519.0,
+        "strict_healthy": true,
+        "states": 720,
+        "callbacks": [
+          719,
+          719
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "retained_layer_errors": {},
+        "result_sha256": "e9164b00abb44e55a7c57c44eacaabffea1ab20cdbdf5b58242c59a8f935bb0c",
+        "replay_sha256": "3d4064ccef63d955ff46cc384ab19878b1236d41fe8faf568875c97412a44dc6",
+        "cash_audit": {
+          "replay_sha256": "3d4064ccef63d955ff46cc384ab19878b1236d41fe8faf568875c97412a44dc6",
+          "checked_transitions": 719,
+          "cash_residuals": [
+            0,
+            0
+          ],
+          "rewards_in_player_order": [
+            84923.0,
+            84519.0
+          ]
+        }
+      },
+      "control": {
+        "own_cash": 81467.0,
+        "rival_cash": 81467.0,
+        "strict_healthy": false,
+        "states": 720,
+        "callbacks": [
+          719,
+          719
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "retained_layer_errors": {
+          "R4_control": {
+            "_CORE_TAPE__R51_INPUT_REPORT:input_application_errors": 1,
+            "_CORE_TAPE__R51_WAREHOUSE_REPORT:input_application_errors": 1,
+            "_CORE_TAPE__R70_REPORT:input_application_errors": 1,
+            "_CORE_TAPE__R85_REPORT:input_application_errors": 1,
+            "_CORE_TAPE__R95_REPORT:input_application_errors": 1,
+            "_CORE_TAPE__R97_REPORT:input_application_errors": 1
+          },
+          "Carrot_ref": {
+            "_R51_INPUT_REPORT:input_application_errors": 1,
+            "_R51_WAREHOUSE_REPORT:input_application_errors": 1,
+            "_R70_REPORT:input_application_errors": 1,
+            "_R85_REPORT:input_application_errors": 1,
+            "_R95_REPORT:input_application_errors": 1,
+            "_R97_REPORT:input_application_errors": 1
+          }
+        },
+        "result_sha256": "86c920e899b5e3c271030ab7a69198679c431c51fd153d7502095013787061e0",
+        "replay_sha256": "7a9070a657cc064dfa34e7e6a93c93115789c7e7e59aba45ee653d0343e637f0",
+        "cash_audit": {
+          "replay_sha256": "7a9070a657cc064dfa34e7e6a93c93115789c7e7e59aba45ee653d0343e637f0",
+          "checked_transitions": 719,
+          "cash_residuals": [
+            0,
+            0
+          ],
+          "rewards_in_player_order": [
+            81467.0,
+            81467.0
+          ]
+        }
+      }
+    },
+    {
+      "opponent": "Carrot_ref",
+      "seed": 1921605,
+      "seat": 1,
+      "candidate": {
+        "own_cash": 84923.0,
+        "rival_cash": 84519.0,
+        "strict_healthy": true,
+        "states": 720,
+        "callbacks": [
+          719,
+          719
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "retained_layer_errors": {},
+        "result_sha256": "8b32d62bdbd6c3f25eeb759db8d2e4ec26cb4ba4d5dae2c44fb81d1bab2b609c",
+        "replay_sha256": "05dda094ec28489ac7dd2e966b5548461bf11f8b85896e351c315e507f6c0399",
+        "cash_audit": {
+          "replay_sha256": "05dda094ec28489ac7dd2e966b5548461bf11f8b85896e351c315e507f6c0399",
+          "checked_transitions": 719,
+          "cash_residuals": [
+            0,
+            0
+          ],
+          "rewards_in_player_order": [
+            84519.0,
+            84923.0
+          ]
+        }
+      },
+      "control": {
+        "own_cash": 81467.0,
+        "rival_cash": 81467.0,
+        "strict_healthy": false,
+        "states": 720,
+        "callbacks": [
+          719,
+          719
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "retained_layer_errors": {
+          "Carrot_ref": {
+            "_R51_INPUT_REPORT:input_application_errors": 1,
+            "_R51_WAREHOUSE_REPORT:input_application_errors": 1,
+            "_R70_REPORT:input_application_errors": 1,
+            "_R85_REPORT:input_application_errors": 1,
+            "_R95_REPORT:input_application_errors": 1,
+            "_R97_REPORT:input_application_errors": 1
+          },
+          "R4_control": {
+            "_CORE_TAPE__R51_INPUT_REPORT:input_application_errors": 1,
+            "_CORE_TAPE__R51_WAREHOUSE_REPORT:input_application_errors": 1,
+            "_CORE_TAPE__R70_REPORT:input_application_errors": 1,
+            "_CORE_TAPE__R85_REPORT:input_application_errors": 1,
+            "_CORE_TAPE__R95_REPORT:input_application_errors": 1,
+            "_CORE_TAPE__R97_REPORT:input_application_errors": 1
+          }
+        },
+        "result_sha256": "0bafab7a051b76886ae558cf7ac2cfd9b3b60ffc2f85a2e85429dbc67a6a5876",
+        "replay_sha256": "8b2b15448b7d176d0df39e3519e07bbef1149590e1fc9bc4e510b59618b036c7",
+        "cash_audit": {
+          "replay_sha256": "8b2b15448b7d176d0df39e3519e07bbef1149590e1fc9bc4e510b59618b036c7",
+          "checked_transitions": 719,
+          "cash_residuals": [
+            0,
+            0
+          ],
+          "rewards_in_player_order": [
+            81467.0,
+            81467.0
+          ]
+        }
+      }
+    },
+    {
+      "opponent": "Build14_ref",
+      "seed": 1921601,
+      "seat": 0,
+      "candidate": {
+        "own_cash": 77536.0,
+        "rival_cash": 75019.0,
+        "strict_healthy": true,
+        "states": 720,
+        "callbacks": [
+          719,
+          719
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "retained_layer_errors": {},
+        "result_sha256": "1be3abc2ed9f2267141302ab5dca3be5a2fc6efd9b761283c22a0d305da539b3",
+        "replay_sha256": "502df9393c588b7fe819bd67d39edf92fa3b7fadb25e6e8bf053fc8038e1155d",
+        "cash_audit": {
+          "replay_sha256": "502df9393c588b7fe819bd67d39edf92fa3b7fadb25e6e8bf053fc8038e1155d",
+          "checked_transitions": 719,
+          "cash_residuals": [
+            0,
+            0
+          ],
+          "rewards_in_player_order": [
+            77536.0,
+            75019.0
+          ]
+        }
+      },
+      "control": {
+        "own_cash": 73203.0,
+        "rival_cash": 71817.0,
+        "strict_healthy": true,
+        "states": 720,
+        "callbacks": [
+          719,
+          719
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "retained_layer_errors": {},
+        "result_sha256": "b0959e8b975ad39c86a76afeb2e6858ed9c14c5e092a9fb2f4e56034751c34d1",
+        "replay_sha256": "989de9e9fa72a7acc2ed9b8397d6bb8843ca4fe641f6146f87f0294224f1e0cd",
+        "cash_audit": {
+          "replay_sha256": "989de9e9fa72a7acc2ed9b8397d6bb8843ca4fe641f6146f87f0294224f1e0cd",
+          "checked_transitions": 719,
+          "cash_residuals": [
+            0,
+            0
+          ],
+          "rewards_in_player_order": [
+            73203.0,
+            71817.0
+          ]
+        }
+      }
+    },
+    {
+      "opponent": "Build14_ref",
+      "seed": 1921601,
+      "seat": 1,
+      "candidate": {
+        "own_cash": 77536.0,
+        "rival_cash": 75019.0,
+        "strict_healthy": true,
+        "states": 720,
+        "callbacks": [
+          719,
+          719
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "retained_layer_errors": {},
+        "result_sha256": "22c17f64bf161fd44d8f042b2be423aa7b94d3b5b07c1b4358ef8bf0552a74c0",
+        "replay_sha256": "a3e1c1a4ada64bb8de15fcb3ed03f04889c31ee59e9c5c996f7417a310adc5d6",
+        "cash_audit": {
+          "replay_sha256": "a3e1c1a4ada64bb8de15fcb3ed03f04889c31ee59e9c5c996f7417a310adc5d6",
+          "checked_transitions": 719,
+          "cash_residuals": [
+            0,
+            0
+          ],
+          "rewards_in_player_order": [
+            75019.0,
+            77536.0
+          ]
+        }
+      },
+      "control": {
+        "own_cash": 73203.0,
+        "rival_cash": 71817.0,
+        "strict_healthy": true,
+        "states": 720,
+        "callbacks": [
+          719,
+          719
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "retained_layer_errors": {},
+        "result_sha256": "88fef19da125f52b07e9e9ae88153f482ca589351193e20a5ade083878b1b150",
+        "replay_sha256": "e0ff2cc01bb49a5b27c0f596b628ef9c0042677089c0b79d3ef15b8503c72022",
+        "cash_audit": {
+          "replay_sha256": "e0ff2cc01bb49a5b27c0f596b628ef9c0042677089c0b79d3ef15b8503c72022",
+          "checked_transitions": 719,
+          "cash_residuals": [
+            0,
+            0
+          ],
+          "rewards_in_player_order": [
+            71817.0,
+            73203.0
+          ]
+        }
+      }
+    },
+    {
+      "opponent": "Build14_ref",
+      "seed": 1921605,
+      "seat": 0,
+      "candidate": {
+        "own_cash": 85345.0,
+        "rival_cash": 83326.0,
+        "strict_healthy": true,
+        "states": 720,
+        "callbacks": [
+          719,
+          719
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "retained_layer_errors": {},
+        "result_sha256": "e694bcae6e21063192fd2d344506c44c699976fb27c37b0bb7ab8ca3d820bef7",
+        "replay_sha256": "9f1f8d2c412ec0f5131717634a2eae284e17276c0c6507b2dcef84e03a3db19b",
+        "cash_audit": {
+          "replay_sha256": "9f1f8d2c412ec0f5131717634a2eae284e17276c0c6507b2dcef84e03a3db19b",
+          "checked_transitions": 719,
+          "cash_residuals": [
+            0,
+            0
+          ],
+          "rewards_in_player_order": [
+            85345.0,
+            83326.0
+          ]
+        }
+      },
+      "control": {
+        "own_cash": 81797.0,
+        "rival_cash": 80518.0,
+        "strict_healthy": true,
+        "states": 720,
+        "callbacks": [
+          719,
+          719
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "retained_layer_errors": {},
+        "result_sha256": "645eea3dfc44959c8034026ec45158eba9bac9f99b93c0233addfaf6b36dd97a",
+        "replay_sha256": "5b4f7512f499c264b2722b8b3e2c4df803a24512b770a5654229846f4dfe904b",
+        "cash_audit": {
+          "replay_sha256": "5b4f7512f499c264b2722b8b3e2c4df803a24512b770a5654229846f4dfe904b",
+          "checked_transitions": 719,
+          "cash_residuals": [
+            0,
+            0
+          ],
+          "rewards_in_player_order": [
+            81797.0,
+            80518.0
+          ]
+        }
+      }
+    },
+    {
+      "opponent": "Build14_ref",
+      "seed": 1921605,
+      "seat": 1,
+      "candidate": {
+        "own_cash": 85345.0,
+        "rival_cash": 83326.0,
+        "strict_healthy": true,
+        "states": 720,
+        "callbacks": [
+          719,
+          719
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "retained_layer_errors": {},
+        "result_sha256": "4fa58e3158fba62fc655edcd612d18b92625dde8a29288f233169e96b8ead25c",
+        "replay_sha256": "0c6df95efce4cf43aef598c1d139032f25e167e6687d95eab4d3699dd6479538",
+        "cash_audit": {
+          "replay_sha256": "0c6df95efce4cf43aef598c1d139032f25e167e6687d95eab4d3699dd6479538",
+          "checked_transitions": 719,
+          "cash_residuals": [
+            0,
+            0
+          ],
+          "rewards_in_player_order": [
+            83326.0,
+            85345.0
+          ]
+        }
+      },
+      "control": {
+        "own_cash": 81797.0,
+        "rival_cash": 80518.0,
+        "strict_healthy": true,
+        "states": 720,
+        "callbacks": [
+          719,
+          719
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "retained_layer_errors": {},
+        "result_sha256": "be77bca107ab5a148d15b9217b7aa05defee8d8f042c0b53c8f94ece174594ce",
+        "replay_sha256": "46845e3eae38e82136640c6a2a4643f8531482508b0bb5a8b7dbe7dec0fd6eba",
+        "cash_audit": {
+          "replay_sha256": "46845e3eae38e82136640c6a2a4643f8531482508b0bb5a8b7dbe7dec0fd6eba",
+          "checked_transitions": 719,
+          "cash_residuals": [
+            0,
+            0
+          ],
+          "rewards_in_player_order": [
+            80518.0,
+            81797.0
+          ]
+        }
+      }
+    },
+    {
+      "opponent": "Guru_ref",
+      "seed": 1921601,
+      "seat": 0,
+      "candidate": {
+        "own_cash": 77373.0,
+        "rival_cash": 74094.0,
+        "strict_healthy": true,
+        "states": 720,
+        "callbacks": [
+          719,
+          719
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "retained_layer_errors": {},
+        "result_sha256": "9b187353c27e5ef48a3b773618c7bd35d8a1efde3ca79bc42ecbcda7e3658cca",
+        "replay_sha256": "6d87158493f9557ced013a8a3fe77b230d0540d1dff809476ea9072cea42b1e3",
+        "cash_audit": {
+          "replay_sha256": "6d87158493f9557ced013a8a3fe77b230d0540d1dff809476ea9072cea42b1e3",
+          "checked_transitions": 719,
+          "cash_residuals": [
+            0,
+            0
+          ],
+          "rewards_in_player_order": [
+            77373.0,
+            74094.0
+          ]
+        }
+      },
+      "control": {
+        "own_cash": 72701.0,
+        "rival_cash": 71372.0,
+        "strict_healthy": true,
+        "states": 720,
+        "callbacks": [
+          719,
+          719
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "retained_layer_errors": {},
+        "result_sha256": "6e0645b2193b36488bb5a90ca70d356db97dbc7d06ee3d8256e1745e1321be35",
+        "replay_sha256": "96a0e23b0d55a8836d929823803a76afd1136f6148d4bf327f9f20d0ec3af840",
+        "cash_audit": {
+          "replay_sha256": "96a0e23b0d55a8836d929823803a76afd1136f6148d4bf327f9f20d0ec3af840",
+          "checked_transitions": 719,
+          "cash_residuals": [
+            0,
+            0
+          ],
+          "rewards_in_player_order": [
+            72701.0,
+            71372.0
+          ]
+        }
+      }
+    },
+    {
+      "opponent": "Guru_ref",
+      "seed": 1921601,
+      "seat": 1,
+      "candidate": {
+        "own_cash": 77373.0,
+        "rival_cash": 74094.0,
+        "strict_healthy": true,
+        "states": 720,
+        "callbacks": [
+          719,
+          719
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "retained_layer_errors": {},
+        "result_sha256": "d87663c1f363f1a4cd9a1d15dfcc8cbeeff4d5663bb5adddaae8893983d7f99b",
+        "replay_sha256": "f2034dc311065664a677f77b229cc9ecad1a90aabbdb954a813284adbb854468",
+        "cash_audit": {
+          "replay_sha256": "f2034dc311065664a677f77b229cc9ecad1a90aabbdb954a813284adbb854468",
+          "checked_transitions": 719,
+          "cash_residuals": [
+            0,
+            0
+          ],
+          "rewards_in_player_order": [
+            74094.0,
+            77373.0
+          ]
+        }
+      },
+      "control": {
+        "own_cash": 72701.0,
+        "rival_cash": 71372.0,
+        "strict_healthy": true,
+        "states": 720,
+        "callbacks": [
+          719,
+          719
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "retained_layer_errors": {},
+        "result_sha256": "bde0131689a35e4088b10fb37475ad97f7f84d458502dd1cdd2cc13aed974001",
+        "replay_sha256": "9d84e2e6f1618e7c2756e8b42e845d1e43bea7deda45133291c433b7de75bf83",
+        "cash_audit": {
+          "replay_sha256": "9d84e2e6f1618e7c2756e8b42e845d1e43bea7deda45133291c433b7de75bf83",
+          "checked_transitions": 719,
+          "cash_residuals": [
+            0,
+            0
+          ],
+          "rewards_in_player_order": [
+            71372.0,
+            72701.0
+          ]
+        }
+      }
+    },
+    {
+      "opponent": "Guru_ref",
+      "seed": 1921605,
+      "seat": 0,
+      "candidate": {
+        "own_cash": 85039.0,
+        "rival_cash": 82595.0,
+        "strict_healthy": true,
+        "states": 720,
+        "callbacks": [
+          719,
+          719
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "retained_layer_errors": {},
+        "result_sha256": "f9713f4ff8cf6057e3715594ddbc54d44715c967c3e033c0e5dc3cbbc21bd490",
+        "replay_sha256": "2501ffa5b8a10e05d8048c47e0314e0a74f6cfc239aa81fbfa7b610ef908567e",
+        "cash_audit": {
+          "replay_sha256": "2501ffa5b8a10e05d8048c47e0314e0a74f6cfc239aa81fbfa7b610ef908567e",
+          "checked_transitions": 719,
+          "cash_residuals": [
+            0,
+            0
+          ],
+          "rewards_in_player_order": [
+            85039.0,
+            82595.0
+          ]
+        }
+      },
+      "control": {
+        "own_cash": 81720.0,
+        "rival_cash": 79729.0,
+        "strict_healthy": true,
+        "states": 720,
+        "callbacks": [
+          719,
+          719
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "retained_layer_errors": {},
+        "result_sha256": "c2bd6f1e38ae30b31a8df89756ce622585413bdc727500dbc01145e0c4169ca9",
+        "replay_sha256": "7adbdc3df7fbdb550c8f1a8ced430d8b14bf6ccbc264551e3eee054f688b22c7",
+        "cash_audit": {
+          "replay_sha256": "7adbdc3df7fbdb550c8f1a8ced430d8b14bf6ccbc264551e3eee054f688b22c7",
+          "checked_transitions": 719,
+          "cash_residuals": [
+            0,
+            0
+          ],
+          "rewards_in_player_order": [
+            81720.0,
+            79729.0
+          ]
+        }
+      }
+    },
+    {
+      "opponent": "Guru_ref",
+      "seed": 1921605,
+      "seat": 1,
+      "candidate": {
+        "own_cash": 85039.0,
+        "rival_cash": 82595.0,
+        "strict_healthy": true,
+        "states": 720,
+        "callbacks": [
+          719,
+          719
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "retained_layer_errors": {},
+        "result_sha256": "9baa0871e4ab8b00cd98745a6013f858edc9628b06ae0aa75fb489e39645e7c2",
+        "replay_sha256": "90d0ef74516ae8b0d72301d7b7ba047c6706c606752ea407c19e3dc7c63837b0",
+        "cash_audit": {
+          "replay_sha256": "90d0ef74516ae8b0d72301d7b7ba047c6706c606752ea407c19e3dc7c63837b0",
+          "checked_transitions": 719,
+          "cash_residuals": [
+            0,
+            0
+          ],
+          "rewards_in_player_order": [
+            82595.0,
+            85039.0
+          ]
+        }
+      },
+      "control": {
+        "own_cash": 81720.0,
+        "rival_cash": 79729.0,
+        "strict_healthy": true,
+        "states": 720,
+        "callbacks": [
+          719,
+          719
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "retained_layer_errors": {},
+        "result_sha256": "3e3e64e6faa0feddc5cdb9d2009f06644cb03f035614268b0d64a8fe9e38aab4",
+        "replay_sha256": "ee7e2c14e705e31cf105c9d5e062511e622d213d61602875ce170ee0d54a528a",
+        "cash_audit": {
+          "replay_sha256": "ee7e2c14e705e31cf105c9d5e062511e622d213d61602875ce170ee0d54a528a",
+          "checked_transitions": 719,
+          "cash_residuals": [
+            0,
+            0
+          ],
+          "rewards_in_player_order": [
+            79729.0,
+            81720.0
+          ]
+        }
+      }
+    }
+  ]
+}

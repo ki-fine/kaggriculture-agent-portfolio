@@ -1,0 +1,226 @@
+{
+  "schema_version": 1,
+  "experiment": "V74 rule-policy complete-action behavior cloning",
+  "experiment_status": "completed_historical_development_experiment",
+  "final_competition_agent_is_this_bc_model": false,
+  "public_scope": {
+    "includes": [
+      "selected current implementation snapshots",
+      "aggregated historical metrics and provenance hashes",
+      "synthetic CPU smoke example"
+    ],
+    "excludes": [
+      "teacher strategy source",
+      "model weights",
+      "original trajectories",
+      "full competition agent",
+      "historical dataset builder"
+    ],
+    "reproduction_limit": "The synthetic smoke checks interfaces and gradients only. Original data and weights are not distributed. The dataset builder has changed since the historical experiment, so this snapshot does not provide one-command reproduction of historical metrics."
+  },
+  "dataset": {
+    "historical_dataset_directory": "data_bulk_all",
+    "family": "v74_rule_full_action_bc",
+    "teacher_identifier": "farm2945",
+    "train": {
+      "trajectories": 416,
+      "turns": 299104,
+      "independent_worlds": 208
+    },
+    "validation": {
+      "trajectories": 32,
+      "turns": 23008,
+      "independent_worlds": 16
+    },
+    "timesteps_per_trajectory": 719,
+    "split_unit": "complete trajectories with disjoint world seeds",
+    "manifest_episode_id_overlap": 0,
+    "manifest_world_seed_overlap": 0,
+    "split_verification_scope": "Read original manifest split metadata and trainer overlap guards; did not reload unpublished NPZ tensors for this portfolio.",
+    "vocabulary_fit": "training actions only",
+    "unit_vocabulary_size": 90,
+    "market_vocabulary_size": 374,
+    "training_unknown_unit_targets": 0,
+    "training_unknown_market_targets": 0,
+    "validation_unknown_market_targets": 6,
+    "validation_unknown_unit_targets": 0,
+    "sealed_test_available": false,
+    "validation_is_development": true
+  },
+  "model": {
+    "family": "v73_masked_actor_attention",
+    "global_features": 8331,
+    "max_actors": 32,
+    "actor_features": 56,
+    "max_market_orders": 10,
+    "market_sequence_tokens_including_eos": 11,
+    "historical_hidden_size": 192,
+    "architecture": [
+      "global MLP followed by temporal GRU",
+      "actor MLP with actor identity embeddings",
+      "one-layer four-head masked Transformer over actor slots",
+      "active actor pooling fused with temporal context",
+      "unit command head and hands-length head",
+      "GRUCell autoregressive ordered-market decoder"
+    ],
+    "market_training_decode": "teacher forcing with strictly preceding order tokens",
+    "market_validation_metric_decode": "autoregressive free decoding",
+    "loss": "masked unit cross entropy + masked market cross entropy + 0.2 * hands-length cross entropy",
+    "non_pass_unit_weight": 2,
+    "ignored_targets": [
+      "PAD",
+      "UNK for unit and market losses"
+    ],
+    "value_head_rl_training_performed": false
+  },
+  "training": {
+    "status": "complete",
+    "epochs": 20,
+    "selected_epoch": 4,
+    "selection_split": "development validation",
+    "selection_metric": "minimum total validation loss",
+    "optimizer": "AdamW",
+    "learning_rate": 0.00003,
+    "weight_decay": 0.00001,
+    "batch_size_trajectories": 2,
+    "truncated_bptt_chunk_steps": 32,
+    "gradient_clip_norm": 1,
+    "hidden_size": 192,
+    "class_balanced": false,
+    "non_pass_weight": 2,
+    "hands_length_weight": 0.2,
+    "seed": 20260920,
+    "cpu_threads": 4,
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "requested_device": "cuda",
+    "gpu_memory_fraction": 0.3,
+    "warm_start_identifier": "train_bulk_all/checkpoint.pt",
+    "warm_start_sha256": "b29ff276394f0c53ee4dfa27cd6381e3e48bff77bea64c54815d6a3e43404cf4",
+    "test_used_for_selection": false
+  },
+  "validation": {
+    "full_action_correct": 20305,
+    "turn_total": 23008,
+    "full_action_exact": 0.882519123783032,
+    "full_action_exact_percent": 88.2519123783032,
+    "unit_active_accuracy": 0.9940375931766054,
+    "unit_non_pass_accuracy": 0.9953767422024928,
+    "whole_market_exact": 0.9076842837273992,
+    "market_non_eos_quantity_tuple_accuracy": 0.8770129911380745,
+    "hands_length_accuracy": 1,
+    "total_loss": 0.23706275107194058,
+    "interpretation": "Agreement with teacher actions on development trajectories; not a win rate or sealed-test metric."
+  },
+  "autonomous_rollout": {
+    "status": "complete",
+    "opponent_identifier": "master",
+    "worlds": 3,
+    "seats_per_world": 2,
+    "games": 6,
+    "wins": 0,
+    "draws": 0,
+    "losses": 6,
+    "own_cash_mean": 89628.83333333333,
+    "net_cash_margin_mean": -15661.666666666666,
+    "callback_errors": 0,
+    "teacher_fallback_calls": 0,
+    "interpretation": "The completed BC model did not beat Master in this small development rollout. Offline action agreement did not establish closed-loop success."
+  },
+  "later_uncompleted_experiment": {
+    "dataset_identifier": "data_all_teachers",
+    "train_trajectories": 544,
+    "train_turns": 391136,
+    "training_identifier": "train_all_teachers",
+    "history_status": "running",
+    "recorded_epochs": 7,
+    "planned_epochs": 16,
+    "completed_checkpoint_present": false,
+    "interpretation": "A separate later dataset and interrupted run; its 544 trajectories must not be attributed to the completed 88.25% model."
+  },
+  "evidence": [
+    {
+      "role": "validation metrics",
+      "identifier": "train_bulk_all2/evaluation.json",
+      "basename": "evaluation.json",
+      "sha256": "b758e283f1b4b478166d7e975f662cb521f854c1d2d47a62c94834b6847e2926"
+    },
+    {
+      "role": "completed training history and config",
+      "identifier": "train_bulk_all2/history.json",
+      "basename": "history.json",
+      "sha256": "79ce6f7135577d79ef2e62c3024caf4a717a485a7ce94d7985315eba0e4e5883"
+    },
+    {
+      "role": "completed historical weights, not distributed",
+      "identifier": "train_bulk_all2/checkpoint.pt",
+      "basename": "checkpoint.pt",
+      "sha256": "3d82bfb530d950f15a261771168b6ab43c3c0ccc2598540a45b73131fa69948d"
+    },
+    {
+      "role": "training dataset metadata",
+      "identifier": "data_bulk_all/manifest.json",
+      "basename": "manifest.json",
+      "sha256": "824cb21cb1a85fec37e72084839a1675c8c6f0e7aa0bc9e17a33b9a4132b7903"
+    },
+    {
+      "role": "historical action codec, not distributed",
+      "identifier": "data_bulk_all/codec.json",
+      "basename": "codec.json",
+      "sha256": "a371139d1305ff2f924e356b58f54bb2370cc5039ca09a212275a66ec42201e7"
+    },
+    {
+      "role": "closed-loop aggregate",
+      "identifier": "rollout_bulk_all2/summary.json",
+      "basename": "summary.json",
+      "sha256": "918e07eadb60505d3c64f26d09348b321ac6cdc1388a247894b0527b3fe0e249"
+    },
+    {
+      "role": "six game results",
+      "identifier": "rollout_bulk_all2/records.json",
+      "basename": "records.json",
+      "sha256": "5e26aabb2caa29594a6b7fed9ad590f4b402cb7b5a549219f6b4c7fe8d22c50e"
+    },
+    {
+      "role": "separate later dataset metadata",
+      "identifier": "data_all_teachers/manifest.json",
+      "basename": "manifest.json",
+      "sha256": "1d2d9f6e6a42f5dfdf48c524a256d3ee6ddbca31fb95d29048bd15e8e73651da"
+    },
+    {
+      "role": "interrupted later training history",
+      "identifier": "train_all_teachers/history.json",
+      "basename": "history.json",
+      "sha256": "98e1ede7efea3f09ec68340b19ae9a436a3dc5debc8e57931eb38f98b2ae6674"
+    }
+  ],
+  "selected_source_snapshots": [
+    {
+      "published_path": "ml/replay_learning/full_action_schema.py",
+      "basename": "full_action_schema.py",
+      "sha256": "0d98277b054de3603451e5fc39697ddcccece738ba54e31fce0a34dc35eb5f5e",
+      "bytes_preserved": true,
+      "note": "Current source SHA also matches the historical feature schema SHA."
+    },
+    {
+      "published_path": "ml/replay_learning/full_action_model.py",
+      "basename": "full_action_model.py",
+      "sha256": "f35d4e00a0cf508230019cbb2b95f1ed65c85a5ddb1d6f64d52b5816b47277c8",
+      "bytes_preserved": true,
+      "note": "Current project implementation snapshot; historical evaluation does not record a model source hash."
+    },
+    {
+      "published_path": "ml/replay_learning/full_action_model_v73.py",
+      "basename": "full_action_model_v73.py",
+      "sha256": "941b7bd528e2e760f1e1acc998a1d528bb77bad136b9bb1100946aa1f6e6aaee",
+      "bytes_preserved": true,
+      "note": "Current project implementation snapshot; historical evaluation does not record a model source hash."
+    }
+  ],
+  "historical_dataset_builder": {
+    "basename": "v74_rule_dataset.py",
+    "recorded_sha256": "efbd4df99627a9ad37c96d4d96a6d51024c2cb14bb87d9ffa8acb4ddd0518a72",
+    "current_sha256": "60a37eeb565fafee0046facd563a6aef83802fd7e3d366858b316875f170c55c",
+    "current_matches_historical": false,
+    "distributed": false
+  }
+}

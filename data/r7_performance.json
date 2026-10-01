@@ -1,0 +1,416 @@
+{
+  "schema_version": 1,
+  "panel": "R7_runtime_only_normal32",
+  "candidate_label": "V3R2_runtime_only",
+  "note": "V3R2 runtime-only ablation, not the combined final R7 strategy. Same actions and cash isolate runtime changes.",
+  "source_sha256": "be47fea0fa320e9f1303be185a9460d5312bac35030dec240e9763bfcd6078ca",
+  "control_source_sha256": "ff161fc6bc2d0b6aecd036b4baf07fe785e54d25baba5d53b6d0b75371e11a03",
+  "declared_seeds": [
+    1921440,
+    1921441
+  ],
+  "declared_seats": [
+    0,
+    1
+  ],
+  "declared_opponents": [
+    "R4_ref",
+    "Carrot_ref",
+    "Build14_ref",
+    "Guru_ref"
+  ],
+  "expected_pairs": 16,
+  "expected_games": 32,
+  "host_concurrent_games": 6,
+  "scope": "Local host measurements; ratios average per pair. Not Kaggle hardware measurements or online score gains.",
+  "expected_recomputed": {
+    "mean_callback_total_ratio": 0.8443502057947166,
+    "mean_later_callback_ratio": 0.8264384266618638
+  },
+  "rows": [
+    {
+      "opponent": "R4_ref",
+      "seed": 1921440,
+      "seat": 0,
+      "candidate": {
+        "own_cash": 75117.0,
+        "rival_cash": 75117.0,
+        "result_sha256": "53386fb4d34e65db9b92145d71dec8451bb99c5eee2b6ae640c8ab379924c572",
+        "replay_sha256": "099020071fe0d1dc71360efde4197531707c80f069956a2c4bd2a27405bae5cc",
+        "callback_total_seconds": 31.004761575000018,
+        "later_callback_seconds": 27.091323831000018
+      },
+      "control": {
+        "own_cash": 75117.0,
+        "rival_cash": 75117.0,
+        "result_sha256": "28053ace3b41271709b85131f21850a2e9488c8253ad938a3652aa6879ffda97",
+        "replay_sha256": "47a6cd8fdfb8c317de0561c8673a6769c46d50cbb60bf366c3c30b89610a35a8",
+        "callback_total_seconds": 37.408239634999944,
+        "later_callback_seconds": 33.512316905999946
+      },
+      "both_player_actions_exact": true,
+      "all_callback_runtime_semantics_exact": true,
+      "all_callback_optimizer_nontiming_exact": true
+    },
+    {
+      "opponent": "R4_ref",
+      "seed": 1921440,
+      "seat": 1,
+      "candidate": {
+        "own_cash": 75117.0,
+        "rival_cash": 75117.0,
+        "result_sha256": "2c97fd6e1eabfcd5ad067c4533c011e1c5298cff07df66f74c628895c2cbe61f",
+        "replay_sha256": "6131ad2c2e0b5249e36a9ac7f96010fd7fb5702a77434e0e071b8472de91797f",
+        "callback_total_seconds": 30.629411461999993,
+        "later_callback_seconds": 27.11982904499999
+      },
+      "control": {
+        "own_cash": 75117.0,
+        "rival_cash": 75117.0,
+        "result_sha256": "183d015243afe62eab8882436f9392adefe038e032758b15cae1e36d40a201eb",
+        "replay_sha256": "a7736a08f1a6637cedfe17ee508e9f1c5c5fd7cd114b561debbe8a0c189b5bfe",
+        "callback_total_seconds": 38.012586043999924,
+        "later_callback_seconds": 34.15035240899992
+      },
+      "both_player_actions_exact": true,
+      "all_callback_runtime_semantics_exact": true,
+      "all_callback_optimizer_nontiming_exact": true
+    },
+    {
+      "opponent": "R4_ref",
+      "seed": 1921441,
+      "seat": 0,
+      "candidate": {
+        "own_cash": 142581.0,
+        "rival_cash": 142581.0,
+        "result_sha256": "5c4fdbbc1a764ed114f5556c7010e4e0ccc0b0ab2bd9170deb7b4072187bfe41",
+        "replay_sha256": "8b8dd546dbd84bccfb56a32dbe0cdcb5a467b3d6da640011059407efc41fb016",
+        "callback_total_seconds": 31.207037670999988,
+        "later_callback_seconds": 27.339830375999988
+      },
+      "control": {
+        "own_cash": 142581.0,
+        "rival_cash": 142581.0,
+        "result_sha256": "c61b3e49817ee654bbc009e2f2fcad8e2aa1c53001e8b4b46246f809f7550c55",
+        "replay_sha256": "8d1498817d8cf015c9eeadb38b21554c4618de18ece84a4e7d51b1ed584dda2d",
+        "callback_total_seconds": 37.477127716,
+        "later_callback_seconds": 34.074103681
+      },
+      "both_player_actions_exact": true,
+      "all_callback_runtime_semantics_exact": true,
+      "all_callback_optimizer_nontiming_exact": true
+    },
+    {
+      "opponent": "R4_ref",
+      "seed": 1921441,
+      "seat": 1,
+      "candidate": {
+        "own_cash": 142581.0,
+        "rival_cash": 142581.0,
+        "result_sha256": "dd7111b0ffb75d38785aa63b95cb477b90b9ab6c66cb2310924a85391eeded6a",
+        "replay_sha256": "1e6a60e214000b373a3f4ef482316251de228f23e96560e1fd7ceaed0fea8d39",
+        "callback_total_seconds": 30.75041159199989,
+        "later_callback_seconds": 26.930966088999888
+      },
+      "control": {
+        "own_cash": 142581.0,
+        "rival_cash": 142581.0,
+        "result_sha256": "4595351e4c6ca98884cfccbde665c16c0bb58a9761905e2e97c96d58a547c99e",
+        "replay_sha256": "70c309e8395e46379a9ce0044b87d117b01d0699d1c34b89aa757debed867427",
+        "callback_total_seconds": 38.39220575700024,
+        "later_callback_seconds": 35.025885856000244
+      },
+      "both_player_actions_exact": true,
+      "all_callback_runtime_semantics_exact": true,
+      "all_callback_optimizer_nontiming_exact": true
+    },
+    {
+      "opponent": "Carrot_ref",
+      "seed": 1921440,
+      "seat": 0,
+      "candidate": {
+        "own_cash": 75117.0,
+        "rival_cash": 75117.0,
+        "result_sha256": "fe83cc472e040d33044e4e0d885188135c5a0f3b8b277d680f6c59727197fa1b",
+        "replay_sha256": "28b5e6b2fed7dacb48fee00868a9c9be368ccf72c904a7049910fe9f73f899cf",
+        "callback_total_seconds": 30.837377918000087,
+        "later_callback_seconds": 27.326840339000086
+      },
+      "control": {
+        "own_cash": 75117.0,
+        "rival_cash": 75117.0,
+        "result_sha256": "b5327932a2935110aab50bb6160f162718dd6e69363438ccb8f1d1baf4df2720",
+        "replay_sha256": "2734581a780f9b8400f39e9c2ad82e43399f79c2255fa8cb01d950137f4a8d05",
+        "callback_total_seconds": 36.879217125999986,
+        "later_callback_seconds": 33.64064648199998
+      },
+      "both_player_actions_exact": true,
+      "all_callback_runtime_semantics_exact": true,
+      "all_callback_optimizer_nontiming_exact": true
+    },
+    {
+      "opponent": "Carrot_ref",
+      "seed": 1921440,
+      "seat": 1,
+      "candidate": {
+        "own_cash": 75117.0,
+        "rival_cash": 75117.0,
+        "result_sha256": "3bad8276ef3ff8d8fb5d0704eedaf571b213ce58046c10dec16a139dae7502f9",
+        "replay_sha256": "371a7faac7bcf28f0e58d525727f17382edfc3126b83ee37bd8171f2600c3732",
+        "callback_total_seconds": 32.0289946220001,
+        "later_callback_seconds": 28.78300264900011
+      },
+      "control": {
+        "own_cash": 75117.0,
+        "rival_cash": 75117.0,
+        "result_sha256": "0f7dd64479f0bd58d97d3dd5b10020bdec7781e8e2ae602a03d8c90f3014d125",
+        "replay_sha256": "0500f7e6b14747acc331f389f51c29cd9027432cbf2a4d4a37aad1510d6cfe4b",
+        "callback_total_seconds": 37.410432424000135,
+        "later_callback_seconds": 34.152777218000125
+      },
+      "both_player_actions_exact": true,
+      "all_callback_runtime_semantics_exact": true,
+      "all_callback_optimizer_nontiming_exact": true
+    },
+    {
+      "opponent": "Carrot_ref",
+      "seed": 1921441,
+      "seat": 0,
+      "candidate": {
+        "own_cash": 142581.0,
+        "rival_cash": 142581.0,
+        "result_sha256": "e287c799f098f7c9b95f1badd18d6bd15b5909cdfdda8011d3a79d5f935b0a35",
+        "replay_sha256": "3c78057321d7fc974e3ce588b8fa55423e0d91e19d2b7d3ea1fdd4f205bb285a",
+        "callback_total_seconds": 31.457404530000105,
+        "later_callback_seconds": 28.09089156200011
+      },
+      "control": {
+        "own_cash": 142581.0,
+        "rival_cash": 142581.0,
+        "result_sha256": "9d3261f8c11563493402cc78a8639f9893b13c78360d5fba18f99263c1731da1",
+        "replay_sha256": "68e8cd514113810ba125231e0ac92f31b9cd65a71c64e517c2b5a11af6730127",
+        "callback_total_seconds": 38.15895889200027,
+        "later_callback_seconds": 34.82156727600028
+      },
+      "both_player_actions_exact": true,
+      "all_callback_runtime_semantics_exact": true,
+      "all_callback_optimizer_nontiming_exact": true
+    },
+    {
+      "opponent": "Carrot_ref",
+      "seed": 1921441,
+      "seat": 1,
+      "candidate": {
+        "own_cash": 142581.0,
+        "rival_cash": 142581.0,
+        "result_sha256": "81b1d2f53ae0e91cec36db87ed706a5fe7f3ae79efcb5237d6a32129daa9453b",
+        "replay_sha256": "a18a1e4d21a9c3a87aeb775366da48ec7c084340d5ae273324e30a7168fd3694",
+        "callback_total_seconds": 33.0278869889994,
+        "later_callback_seconds": 29.713605496999406
+      },
+      "control": {
+        "own_cash": 142581.0,
+        "rival_cash": 142581.0,
+        "result_sha256": "798b8f41f6c51fcda1d8410ee408730051345765af53a16173a63d8bdf77b6ee",
+        "replay_sha256": "12cf011c0e05331f37a316a7666b3449d5d6f50bd365302708d89e7c12686014",
+        "callback_total_seconds": 37.54680141199947,
+        "later_callback_seconds": 34.250891316999486
+      },
+      "both_player_actions_exact": true,
+      "all_callback_runtime_semantics_exact": true,
+      "all_callback_optimizer_nontiming_exact": true
+    },
+    {
+      "opponent": "Build14_ref",
+      "seed": 1921440,
+      "seat": 0,
+      "candidate": {
+        "own_cash": 75580.0,
+        "rival_cash": 75053.0,
+        "result_sha256": "9dc81dbf7930bf21f5ce71b3c815f61f9c11071d33dd0488a11e2620b2b123f6",
+        "replay_sha256": "3fe69163128c50345921130e77bdb487ec67b845f781e107022215d42711a777",
+        "callback_total_seconds": 32.40650802000013,
+        "later_callback_seconds": 29.100458586000144
+      },
+      "control": {
+        "own_cash": 75580.0,
+        "rival_cash": 75053.0,
+        "result_sha256": "db5dd7db7019147fa895ccb9287bd626c0a2ad941786430ad39b015a411c8a65",
+        "replay_sha256": "a0d79ac864dc303700cf95498b037a5d057378fee3c94e53bf51c240514f6375",
+        "callback_total_seconds": 39.76197557499978,
+        "later_callback_seconds": 36.40785673399978
+      },
+      "both_player_actions_exact": true,
+      "all_callback_runtime_semantics_exact": true,
+      "all_callback_optimizer_nontiming_exact": true
+    },
+    {
+      "opponent": "Build14_ref",
+      "seed": 1921440,
+      "seat": 1,
+      "candidate": {
+        "own_cash": 75580.0,
+        "rival_cash": 75053.0,
+        "result_sha256": "bb00bfe6ab9836f6220ac5ac46cf2b0df2c0101dd6a6075f65e310f09d852c60",
+        "replay_sha256": "d341042a8b0606f035a60382ed75a84eb074a3ac36ea066417d2afc4604d518d",
+        "callback_total_seconds": 32.43079065600023,
+        "later_callback_seconds": 29.233779294000215
+      },
+      "control": {
+        "own_cash": 75580.0,
+        "rival_cash": 75053.0,
+        "result_sha256": "66de8f23db9b86c830e2b795c89caa5dc215f2c1e6206fc7fab5a5eb36116c7d",
+        "replay_sha256": "76f8afbba0a68018bc402b8bc6feaa6aad34199de0010825f88c2a5621288f7a",
+        "callback_total_seconds": 40.036628811000014,
+        "later_callback_seconds": 36.812470184999995
+      },
+      "both_player_actions_exact": true,
+      "all_callback_runtime_semantics_exact": true,
+      "all_callback_optimizer_nontiming_exact": true
+    },
+    {
+      "opponent": "Build14_ref",
+      "seed": 1921441,
+      "seat": 0,
+      "candidate": {
+        "own_cash": 141155.0,
+        "rival_cash": 139243.0,
+        "result_sha256": "4caf5e9457d4f435b31d3abda3085ece7a64ba5f2055d096d6d7898303916b0e",
+        "replay_sha256": "b30b2b3feea03ed236cd51e767c1cbf3d33eefe9988dad417d5edaae1daffdcd",
+        "callback_total_seconds": 33.38304423900058,
+        "later_callback_seconds": 29.75249911100053
+      },
+      "control": {
+        "own_cash": 141155.0,
+        "rival_cash": 139243.0,
+        "result_sha256": "1386245db7f68499de5fa0e9686c5a077832514408ebf8db865fd8cf4d400e0c",
+        "replay_sha256": "8d27a09c80147ab5f508731025c9ff246bcb5f6c1f4a56b9e06317d18a16c9b3",
+        "callback_total_seconds": 41.54503105400107,
+        "later_callback_seconds": 37.88406833000107
+      },
+      "both_player_actions_exact": true,
+      "all_callback_runtime_semantics_exact": true,
+      "all_callback_optimizer_nontiming_exact": true
+    },
+    {
+      "opponent": "Build14_ref",
+      "seed": 1921441,
+      "seat": 1,
+      "candidate": {
+        "own_cash": 141155.0,
+        "rival_cash": 139243.0,
+        "result_sha256": "158d2266e871e4295cc65c20458611bbd29951bf445e07c4a3fab7131a2d933a",
+        "replay_sha256": "37b57d06f19be29a9045d7686161bde83c80eeae82a4a28a52583436fb112423",
+        "callback_total_seconds": 33.71617822299993,
+        "later_callback_seconds": 30.033781011999963
+      },
+      "control": {
+        "own_cash": 141155.0,
+        "rival_cash": 139243.0,
+        "result_sha256": "070394323d999c71786fcab0eaad4a232385a0dafbeabf473e72bfdac6b78847",
+        "replay_sha256": "eaad3cd3ec7e4da41ec795ff95488d84212df5753d0dce3d4b60a7a1a79c138e",
+        "callback_total_seconds": 40.05966046800154,
+        "later_callback_seconds": 36.64701830700153
+      },
+      "both_player_actions_exact": true,
+      "all_callback_runtime_semantics_exact": true,
+      "all_callback_optimizer_nontiming_exact": true
+    },
+    {
+      "opponent": "Guru_ref",
+      "seed": 1921440,
+      "seat": 0,
+      "candidate": {
+        "own_cash": 82838.0,
+        "rival_cash": 73528.0,
+        "result_sha256": "c2f83b026c401aa64442503ae2e9206ef1b9ae405aa53517e465d02b483fcede",
+        "replay_sha256": "4e536a2169fa265c6583ca67c7c3c6e11da8a805098b047fe25a226f7d10aad0",
+        "callback_total_seconds": 37.43970765699919,
+        "later_callback_seconds": 33.78504762799918
+      },
+      "control": {
+        "own_cash": 82838.0,
+        "rival_cash": 73528.0,
+        "result_sha256": "76b212fbd4b820a1fa249f38e892bc9d12be764990591e9e1e3a53dd3a18cd12",
+        "replay_sha256": "bc3a3822b0a4a725fed13f45bbb6d01d11d3f3f6722ddf7a369de59b8df2d66e",
+        "callback_total_seconds": 43.771972436000965,
+        "later_callback_seconds": 40.21716349300095
+      },
+      "both_player_actions_exact": true,
+      "all_callback_runtime_semantics_exact": true,
+      "all_callback_optimizer_nontiming_exact": true
+    },
+    {
+      "opponent": "Guru_ref",
+      "seed": 1921440,
+      "seat": 1,
+      "candidate": {
+        "own_cash": 82838.0,
+        "rival_cash": 73528.0,
+        "result_sha256": "cd4f6425e1ba48f93c336a1c01d51f05626895c7cf75b56882703b2699eee489",
+        "replay_sha256": "6fb3bca6522b3c039546e448a8ac917125851d4a36751eec3255f01f3d7e4201",
+        "callback_total_seconds": 38.6870120789996,
+        "later_callback_seconds": 35.01891385299962
+      },
+      "control": {
+        "own_cash": 82838.0,
+        "rival_cash": 73528.0,
+        "result_sha256": "5014afcfb7f793160e86e6b529e9f051074fe5faea400909a85afd75245b8e56",
+        "replay_sha256": "ac3c3f32ce710005450b31883c77b80b3f84727d3860e9f65fce6b742918f0d7",
+        "callback_total_seconds": 43.58315773899943,
+        "later_callback_seconds": 39.81298340999945
+      },
+      "both_player_actions_exact": true,
+      "all_callback_runtime_semantics_exact": true,
+      "all_callback_optimizer_nontiming_exact": true
+    },
+    {
+      "opponent": "Guru_ref",
+      "seed": 1921441,
+      "seat": 0,
+      "candidate": {
+        "own_cash": 141076.0,
+        "rival_cash": 138276.0,
+        "result_sha256": "7dd69a04b4f3fd6337a7f58d72af8ab447cc5926f22420507f411210a8efba94",
+        "replay_sha256": "198c9c3c783f8a77075bfee5d8e7c22ac444b930628302872b1cd6d42fec03dc",
+        "callback_total_seconds": 34.34042110000081,
+        "later_callback_seconds": 30.62447650300078
+      },
+      "control": {
+        "own_cash": 141076.0,
+        "rival_cash": 138276.0,
+        "result_sha256": "73bd3c5e1aba4f7a68150965ac16485812ac6859c478c2a9f91b2dabe7519131",
+        "replay_sha256": "e308b969026c877a13cac6cc740fd782b8beebb14fbe691b7ff140d3be73e22c",
+        "callback_total_seconds": 37.46090710599856,
+        "later_callback_seconds": 33.97570228899855
+      },
+      "both_player_actions_exact": true,
+      "all_callback_runtime_semantics_exact": true,
+      "all_callback_optimizer_nontiming_exact": true
+    },
+    {
+      "opponent": "Guru_ref",
+      "seed": 1921441,
+      "seat": 1,
+      "candidate": {
+        "own_cash": 141076.0,
+        "rival_cash": 138276.0,
+        "result_sha256": "6b6b4897a3777aff525d2149b7b18bcc06f31df8002e1777efffdc91e2db2cc8",
+        "replay_sha256": "035c54385dc58bb477c5344cf06e89d58fd5bdc61a5dca8b5f83fc4d2b17eee3",
+        "callback_total_seconds": 34.44374709799973,
+        "later_callback_seconds": 30.80261882399975
+      },
+      "control": {
+        "own_cash": 141076.0,
+        "rival_cash": 138276.0,
+        "result_sha256": "7f8e405f7668642325b0eee459db21acbcc98836df03acf22b471da0a0db8f7b",
+        "replay_sha256": "3a632111e51775fb3ae0a82e64aa5d774f390474e7695c93111c662957eebd71",
+        "callback_total_seconds": 37.63972662700064,
+        "later_callback_seconds": 34.20319184900063
+      },
+      "both_player_actions_exact": true,
+      "all_callback_runtime_semantics_exact": true,
+      "all_callback_optimizer_nontiming_exact": true
+    }
+  ]
+}

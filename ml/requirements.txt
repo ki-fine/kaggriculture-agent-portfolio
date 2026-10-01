@@ -1,0 +1,4 @@
+# CPU execution is sufficient for smoke.py. Tested environment versions
+# are recorded in smoke_result.json; these are the only dependencies.
+numpy
+torch
