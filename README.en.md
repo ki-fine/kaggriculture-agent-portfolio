@@ -12,6 +12,8 @@ This project documents my work integrating a three-person team's strategy ideas 
 
 The development process used AI coding assistance. Team contributions and ownership are documented in [CREDITS.md](docs/CREDITS.md) and [TEAMWORK.md](docs/TEAMWORK.md).
 
+Our shared team [retrospective](docs/RETROSPECTIVE.md) examines unapproved persistent restrictions introduced by AI tools, overgeneralized negative results, outdated comparison baselines, and incomplete mechanism validation. It distinguishes completed work from proposed changes for the next competition.
+
 ## Measured local results
 
 | Study | Observation | Scope |
@@ -38,6 +40,7 @@ This reproduces metrics from published compact results and exercises state-copy 
 ## Read further
 
 - [Project report in Chinese](docs/PROJECT_REPORT.md)
+- [Post-competition retrospective in Chinese](docs/RETROSPECTIVE.md): scope of negative evidence, route lock-in, and oversight of AI-assisted development
 - [Machine learning experiments](docs/ML_EXPERIMENTS.md)
 - [Evidence definitions and limitations](docs/EVIDENCE.md)
 - [Resume and interview materials](docs/RESUME.md)

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "scope": "Selected observations transcribed from saved local reports for the retrospective. Original reports and full replays are not redistributed. Source hashes identify the reviewed files; they do not independently prove unshared contents.",
+  "cases": [
+    {
+      "id": "comparison_baseline_mismatch",
+      "source_report": "team14_r4_online_reflection_20260928/ONLINE_REFLECTION.md",
+      "source_sha256": "773cee302bce273dcca2cd82b3bef9000cefda3575e0d6f3eecd928700c0667c",
+      "candidate": "r4_union",
+      "tested_reference": "Feed_ProfitSales",
+      "latest_teammate_submission_before_release": "Route2_v2_EarlySell2",
+      "latest_reference_covered_by_r4_holdout_final": false,
+      "old_reference_panel": {
+        "independent_worlds": 12,
+        "seats_per_world": 2,
+        "wins": 23,
+        "losses": 1,
+        "mean_world_margin_delta": 424.58
+      },
+      "conclusion": "Positive results against an old reference did not establish an upgrade over the latest teammate version. No exact source-to-2400-rating association was verified."
+    },
+    {
+      "id": "incomplete_age3_wheat_candidate",
+      "source_report": "V94_WHEAT_GAP7_CAPTURE_RESULT_20260927.md",
+      "source_sha256": "a56c02aa25fdb9f21eb50398cc78a795432625caa1ab5365da9e3fc20f8e4787",
+      "candidate": "v94_wheat_cycle_r35_gap7",
+      "control": "r16",
+      "worlds": 1,
+      "seats": 2,
+      "cash_difference_from_control_by_seat": [-258, -258],
+      "new_wheat_harvest_age": 4,
+      "new_repeated_age3_cycle_implemented": false,
+      "missed_followup_birth_day": 16,
+      "another_wheat_epoch_missing_fertilizer": true,
+      "conclusion": "The negative result applies to an incomplete candidate implementation and does not disprove a correctly implemented repeated age3 cycle."
+    },
+    {
+      "id": "r8_zero_activation_panels",
+      "source_report": "v100_information_r8_20260930/FINAL_REPORT.md",
+      "source_sha256": "9b8a24964bd9c14b907b03768eccbc8e47c5b45d3db163565ee67683cdb98a9a",
+      "separate_panels": [
+        {
+          "candidate": "independent_strategy_v2",
+          "games": 24,
+          "all_games_healthy": true,
+          "actual_strategy_vetoes": 0,
+          "paired_margin_deltas": "all zero"
+        },
+        {
+          "candidate": "V5_eligibility_panel",
+          "games": 24,
+          "actual_route": "Route9",
+          "target_route": "Route105",
+          "new_package_activations": 0,
+          "paired_margin_deltas": "all zero"
+        }
+      ],
+      "conclusion": "The intended mechanism was not exercised. Later conditional active-world comparisons were a separate panel, not proof of population-wide benefit."
+    }
+  ]
+}
