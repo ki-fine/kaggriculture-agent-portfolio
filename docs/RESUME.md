@@ -1,6 +1,6 @@
 # 简历条目与面试说明
 
-这些表述对应已完成的项目工作。最终排名公布后，再按官方记录补充比赛结果。
+这些表述对应已完成的项目工作与已确认的赛事最终结果。
 
 ## 中文简历条目
 
@@ -11,11 +11,12 @@ Python · 仿真规划 · 行为克隆 · 模型集成 · 实验评估
 - 汇总三人团队的生产与交易方案，整合固定任务路线、六种对手影子模型和有限预算搜索，完成最终 Agent 构建与 Kaggle 提交
 - 处理交易排程与既有往返交易的时序冲突；复用相同动作前缀并保持 SDK 状态复制语义，在 32 局／16 配对本地对照中保持动作及现金一致，平均配对回调耗时比下降 15.6%
 - 建立固定种子、双席对照、官方现金审计与源码哈希对应的验证流程；最终 R7 在 2 个条件世界、3 类对手的 12 个配对中净金币差均增加，平均 +961，保留异常标记与样本边界
+- 最终版本在 Kaggle 的 **10,148 支队伍中排名第 581，获得铜牌**
 
 如果版面较小，可以使用以下两条：
 
 - 负责三人团队策略整合与最终 Agent 构建，对接生产路线、六种对手影子模型和市场搜索，并处理跨模块的资源与交易时序冲突
-- 完成固定种子／双席配对、回放现金审计及哈希验证；32 局独立对照保持动作与现金一致，平均配对回调耗时比下降 15.6%，最终版本已提交，成绩待公布
+- 完成固定种子／双席配对、回放现金审计及哈希验证；32 局独立对照保持动作与现金一致，平均配对回调耗时比下降 15.6%；最终版本排名 581 / 10148，获铜牌
 
 ## 机器学习岗位的补充表述
 
@@ -35,11 +36,11 @@ Python · 仿真规划 · 行为克隆 · 模型集成 · 实验评估
 
 - Integrated team farming schedules, six opponent behavior models, and budgeted market search; resolved cross-module resource and transaction-order conflicts and built the final competition submission.
 - Reused shared action prefixes and preserved SDK state-copy semantics. In 16 matched local comparisons across 32 games, actions and cash stayed identical while the mean paired callback-time ratio decreased by 15.6%.
-- Organized fixed-seed, swapped-seat evaluation, cash reconciliation, and SHA-256 release checks. R7 improved cash margin in all 12 comparisons on a two-world, three-opponent conditional panel, with a mean gain of 961 coins; final competition results are pending.
+- Organized fixed-seed, swapped-seat evaluation, cash reconciliation, and SHA-256 release checks. R7 improved cash margin in all 12 comparisons on a two-world, three-opponent conditional panel, with a mean gain of 961 coins. The final result was 581st out of 10,148 teams, earning a bronze medal.
 
 ## 60 秒项目介绍
 
-> 我做的是 Kaggle 的双人农场经营 Agent，负责整合三人团队思路并完成最终代码构建。这个任务同时有生产义务、共享市场和运行预算。我们把浇水喂食等任务固定执行，把推理用于策略和交易选择。我重点处理了模块时序冲突、重复仿真和状态复制问题，并用固定种子、双席对照和现金审计验证。最后提交了 R7，最终排名还没公布；本地结果和限制都在 GitHub 上可以核对。
+> 我做的是 Kaggle 的双人农场经营 Agent，负责整合三人团队思路并完成最终代码构建。这个任务同时有生产义务、共享市场和运行预算。我们把浇水喂食等任务固定执行，把推理用于策略和交易选择。我重点处理了模块时序冲突、重复仿真和状态复制问题，并用固定种子、双席对照和现金审计验证。最终版本在 10,148 支队伍中排名第 581，获得铜牌；本地结果和限制都在 GitHub 上可以核对。
 
 ## 需要能够独立解释的技术问题
 
@@ -58,6 +59,8 @@ Python · 仿真规划 · 行为克隆 · 模型集成 · 实验评估
 
 过程反思与下一次改进计划见 [RETROSPECTIVE.md](RETROSPECTIVE.md)。面试时区分已经完成的工作和下一次准备实施的流程。
 
-## 成绩公布后的措辞
+## 最终结果措辞
 
-只有在官方结果可核对后，才增加最终排名、参赛队伍数或奖牌。百分位需使用同一榜单口径计算。当前材料保留“成绩待公布”，不写预测排名或奖牌。
+可以写：**Kaggle 最终排名 581 / 10148，铜牌**。
+
+不能把这一名次解释为单个模块的因果贡献，也不能把本地配对实验 +961 直接换算为线上领先幅度。最终成绩属于三人团队的共同参赛结果。

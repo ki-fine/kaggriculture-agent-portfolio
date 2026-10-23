@@ -1,6 +1,6 @@
 # Kaggriculture: agent integration and reproducible evaluation
 
-This project documents my work integrating a three-person team's strategy ideas into a final agent for Kaggle's two-player farming competition. My responsibilities covered strategy synthesis, module integration, experiment selection, and the final build. The work is relevant to algorithm, machine learning, and AI engineering internships.
+This project documents my work integrating a three-person team's strategy ideas into a final agent for Kaggle's two-player farming competition. My responsibilities covered strategy synthesis, module integration, experiment selection, and the final build. The final result was **581st out of 10,148 teams, earning a bronze medal**.
 
 ## What the project demonstrates
 
@@ -22,7 +22,7 @@ Our shared team [retrospective](docs/RETROSPECTIVE.md) examines unapproved persi
 | Copy optimization | Identical actions, cash, and decision semantics in 16 pairs; mean paired callback-time ratio reduced by 15.6% | 32 games, 2 fixed worlds, 4 opponents; local six-process timing |
 | Behavior cloning | 88.25% complete-action agreement on 23,008 development-validation turns | 416 training trajectories; autonomous rollout lost all 6 games vs Master and was not deployed |
 | Cash audit | 17,256 official transitions with zero reconciliation residuals for both players | Final 24-game panel |
-| Kaggle delivery | Accepted submission 56713467 | Final competition score and ranking pending as of 2026-10-01 |
+| Kaggle result | Accepted submission 56713467 | **581st / 10,148**, bronze medal |
 
 The strict full-panel health gate was 22/24 and failed because two R4 control games retained historical input-error flags. All 12 candidate games passed. The complete panel is retained; the ten clean comparisons are a diagnostic subset. These results do not establish population win rate or leaderboard improvement.
 
@@ -46,3 +46,5 @@ This reproduces metrics from published compact results and exercises state-copy 
 - [Resume and interview materials](docs/RESUME.md)
 
 The complete agent contains team-supplied routes and models and remains in the team's research repository. This public repository contains selected evaluation code, state-copy improvements, compact evidence, and attribution. Newly authored code is MIT-licensed; referenced Kaggle SDK code is Apache-2.0.
+
+The final result was confirmed on 2026-10-23. The local paired experiments remain conditional evidence and are not reinterpreted as a causal explanation for the leaderboard outcome.

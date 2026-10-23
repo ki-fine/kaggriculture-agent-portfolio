@@ -16,8 +16,12 @@
   "accepted_at_utc": "2026-09-30T16:40:13.383953+00:00",
   "accepted_at_china": "2026-10-01T00:40:13+08:00",
   "official_results": {
-    "status": "pending",
-    "basis": "Owner confirmed final results are not yet available."
+    "status": "final",
+    "leaderboard_rank": 581,
+    "entrant_count": 10148,
+    "medal": "bronze",
+    "as_of": "2026-10-23",
+    "basis": "Owner confirmed the final leaderboard result."
   },
   "public_scope": "Selected new code and compact evidence; complete team agent is not redistributed."
 }

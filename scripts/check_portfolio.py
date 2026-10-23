@@ -45,7 +45,10 @@ def main():
     release = json.loads((ROOT / 'data/release_identity.json').read_text(encoding='utf-8'))
     assert release['kaggle']['submission_id'] == '56713467'
     assert release['kaggle']['status'] == 'accepted_by_platform'
-    assert release['official_results']['status'] == 'pending'
+    assert release['official_results']['status'] == 'final'
+    assert release['official_results']['leaderboard_rank'] == 581
+    assert release['official_results']['entrant_count'] == 10148
+    assert release['official_results']['medal'] == 'bronze'
     ml = json.loads((ROOT / 'data/ml_experiment.json').read_text(encoding='utf-8'))
     print(json.dumps({'status': 'PASS', 'hashed_files': len(manifest['files']),
                       'local_links': checked_links, 'ml_evidence_loaded': bool(ml)},
